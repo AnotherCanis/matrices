@@ -1,0 +1,15 @@
+{{/*
+  Shortcode to format content into div columns.
+
+  "<--->"
+  Magic separator.
+*/}}
+
+{{- $opts := dict "display" "block" }}
+<div class="grid sm:grid-flow-col auto-cols-fr gap-5">
+  {{ range split .Inner "<--->" }}
+    <div>
+      {{ $.Page.RenderString $opts . }}
+    </div>
+  {{ end }}
+</div>

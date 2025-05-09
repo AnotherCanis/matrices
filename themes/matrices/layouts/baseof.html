@@ -4,11 +4,11 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <div class="fixed -z-10 size-full bg-[url({{ (resources.Get "MatricesBG.png").RelPermalink }})]"></div>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
+  <div class="fixed top-0 -z-10 size-full bg-[url({{ (resources.Get "MatricesBG.png").RelPermalink }})]"></div>
+  <main class="p-5 mx-auto my-15 sm:w-4/5 max-w-240 bg-white rounded-2xl">
+    <header>
+      {{ partial "header.html" . }}
+    </header>
     {{ block "main" . }}{{ end }}
   </main>
   <footer>

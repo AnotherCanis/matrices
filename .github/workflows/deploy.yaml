@@ -1,0 +1,8 @@
+on:
+  push:
+
+jobs:
+  call:
+    uses: Anthrocon/actions-deploy/.github/workflows/deploy.yaml@main
+    with:
+      hugo-version: '0.147.2'

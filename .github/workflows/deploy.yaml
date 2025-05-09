@@ -1,8 +1,19 @@
+name: Deploy Hugo site
+
 on:
   push:
+    branches:
+      - main
+
+  workflow_dispatch:
 
 jobs:
   call:
+    name: Call workflow
+    permissions:
+      id-token: write
+      pages: write
+
     uses: Anthrocon/actions-deploy/.github/workflows/deploy.yaml@main
     with:
       hugo-version: '0.147.2'

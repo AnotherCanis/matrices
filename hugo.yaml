@@ -1,5 +1,27 @@
 baseURL: "/"
 copyright: "Sara Howard 2024"
 languageCode: "en-US"
+menus:
+  main:
+    - name: "About Me"
+      weight: 10
+      pageRef: "/"
+
+    - name: "Tutorials"
+      weight: 20
+      pageRef: "/"
+
+    - name: "Services"
+      weight: 30
+      pageRef: "/"
+
+    - name: "Pattern Shop"
+      weight: 40
+      url: "https://matrices.etsy.com/"
+
+    - name: "Online Store"
+      weight: 50
+      url: "https://matrices.bigcartel.com/"
+
 theme: "matrices"
 title: "Matrices.net"
